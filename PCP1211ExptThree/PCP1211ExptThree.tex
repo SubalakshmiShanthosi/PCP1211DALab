@@ -58,19 +58,33 @@ Implementation of MapReduce in Hadoop single node cluster.
         	\begin{itemize}
         		\item Master node slices problem input into several subproblems input.
         		\item Distributes data slices to worker nodes.
+        		\item Worker nodes processes and hands over the control to master.
         	\end{itemize}
-        \end{itemize}
-     \end{itemize}
+           \item Reduce Step: 
+           \begin{itemize}
+           	\item Master node takes the answers to the sub problems and combines them in a predefined way to get the output/answer to original problem. 
+           \end{itemize}
+           \end{itemize}
+\end{itemize}
 \end{itemize}
 
 \section{Software's Used}
 \begin{itemize}
   \item Ubuntu  16.04 LTS
-  \item Hadoop 2.7.3
+  \item Hadoop 1.0.3
+\end{itemize}
+\pagebreak
+
+\section{Hadoop MapReduce Architecture}
+\begin{itemize}
+	\item MapReduce Architecture:
+	\begin{figure}[h]
+		\includegraphics[scale=0.30,center]{exptTwoScreenShot/MapRedArch.png}
+		\caption{Hadoop MapReduce Architecture Diagram.}
+		\label{fig:0}
+	\end{figure}
 \end{itemize}
 
-\section{Description}
-Installation of Oracle VirtualBox with guest Operating System as Ubuntu 16.04.Installation of neccessary packages namely - openssh-server,openssh-client,java,hadoop in the created virtualbox instance.
 \section{Procedure}
 
 \begin{enumerate}
@@ -81,7 +95,7 @@ Installation of Oracle VirtualBox with guest Operating System as Ubuntu 16.04.In
 		\item openssh-client
 		\item java jdk 8
 		\item javac compiler
-                     \item hadoop 2.7.3
+        \item hadoop 1.0.3
 	\end{itemize}
 \pagebreak
 \end{enumerate}

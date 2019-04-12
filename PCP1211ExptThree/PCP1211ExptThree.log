@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  11 APR 2019 10:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  11 APR 2019 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -206,7 +206,11 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(./PCP1211ExptThree.aux)
+(./PCP1211ExptThree.aux
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+)
 \openout1 = `PCP1211ExptThree.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -299,44 +303,52 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<exptTwoScreenShot/fig1.png, id=13, 734.9859pt x 439.4016pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<exptTwoScreenShot/MapRedArch.png, id=10, 689.4558pt x 514.0806pt>
+File: exptTwoScreenShot/MapRedArch.png Graphic file (type png)
+<use exptTwoScreenShot/MapRedArch.png>
+Package pdftex.def Info: exptTwoScreenShot/MapRedArch.png  used on input line 8
+2.
+(pdftex.def)             Requested size: 206.83833pt x 154.22537pt.
+ [2 <./exptTwoScreenShot/MapRedArch.png>]
+<exptTwoScreenShot/fig1.png, id=16, 734.9859pt x 439.4016pt>
 File: exptTwoScreenShot/fig1.png Graphic file (type png)
 <use exptTwoScreenShot/fig1.png>
-Package pdftex.def Info: exptTwoScreenShot/fig1.png  used on input line 91.
+Package pdftex.def Info: exptTwoScreenShot/fig1.png  used on input line 105.
 (pdftex.def)             Requested size: 220.49747pt x 131.82149pt.
-<exptTwoScreenShot/fig2.png, id=14, 732.7375pt x 302.12875pt>
+<exptTwoScreenShot/fig2.png, id=17, 732.7375pt x 302.12875pt>
 File: exptTwoScreenShot/fig2.png Graphic file (type png)
 <use exptTwoScreenShot/fig2.png>
-Package pdftex.def Info: exptTwoScreenShot/fig2.png  used on input line 97.
+Package pdftex.def Info: exptTwoScreenShot/fig2.png  used on input line 111.
 (pdftex.def)             Requested size: 249.12746pt x 102.72241pt.
-<exptTwoScreenShot/fig3.png, id=15, 737.75626pt x 360.34625pt>
+<exptTwoScreenShot/fig3.png, id=18, 737.75626pt x 360.34625pt>
 File: exptTwoScreenShot/fig3.png Graphic file (type png)
 <use exptTwoScreenShot/fig3.png>
-Package pdftex.def Info: exptTwoScreenShot/fig3.png  used on input line 103.
+Package pdftex.def Info: exptTwoScreenShot/fig3.png  used on input line 117.
 (pdftex.def)             Requested size: 250.8338pt x 122.5161pt.
- [3 <./exptTwoScreenShot/fig1.png> <./exptTwoScreenShot/fig2.png> <./exptTwoScr
-eenShot/fig3.png>]
-<exptTwoScreenShot/fig4.png, id=19, 734.745pt x 439.6425pt>
+
+[3 <./exptTwoScreenShot/fig1.png> <./exptTwoScreenShot/fig2.png> <./exptTwoScre
+enShot/fig3.png>]
+<exptTwoScreenShot/fig4.png, id=22, 734.745pt x 439.6425pt>
 File: exptTwoScreenShot/fig4.png Graphic file (type png)
 <use exptTwoScreenShot/fig4.png>
-Package pdftex.def Info: exptTwoScreenShot/fig4.png  used on input line 109.
+Package pdftex.def Info: exptTwoScreenShot/fig4.png  used on input line 123.
 (pdftex.def)             Requested size: 220.42519pt x 131.89375pt.
-<exptTwoScreenShot/fig5.png, id=21, 726.715pt x 208.78pt>
+<exptTwoScreenShot/fig5.png, id=23, 726.715pt x 208.78pt>
 File: exptTwoScreenShot/fig5.png Graphic file (type png)
 <use exptTwoScreenShot/fig5.png>
-Package pdftex.def Info: exptTwoScreenShot/fig5.png  used on input line 115.
+Package pdftex.def Info: exptTwoScreenShot/fig5.png  used on input line 129.
 (pdftex.def)             Requested size: 247.07982pt x 70.98425pt.
-<exptTwoScreenShot/fig5Two.png, id=22, 412.54124pt x 141.52875pt>
+<exptTwoScreenShot/fig5Two.png, id=24, 412.54124pt x 141.52875pt>
 File: exptTwoScreenShot/fig5Two.png Graphic file (type png)
 <use exptTwoScreenShot/fig5Two.png>
-Package pdftex.def Info: exptTwoScreenShot/fig5Two.png  used on input line 121.
+Package pdftex.def Info: exptTwoScreenShot/fig5Two.png  used on input line 135.
 
 (pdftex.def)             Requested size: 140.26216pt x 48.11913pt.
-<exptTwoScreenShot/fig6.png, id=23, 734.745pt x 439.6425pt>
+<exptTwoScreenShot/fig6.png, id=25, 734.745pt x 439.6425pt>
 File: exptTwoScreenShot/fig6.png Graphic file (type png)
 <use exptTwoScreenShot/fig6.png>
-Package pdftex.def Info: exptTwoScreenShot/fig6.png  used on input line 127.
+Package pdftex.def Info: exptTwoScreenShot/fig6.png  used on input line 141.
 (pdftex.def)             Requested size: 220.42519pt x 131.89375pt.
 
 
@@ -344,20 +356,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4 <./exptTwoScreenShot/fig4.png> <./exptTwoScreenShot/fig5.png> <./exptTwoScre
 enShot/fig5Two.png>]
-<exptTwoScreenShot/fig7.png, id=28, 629.35126pt x 365.365pt>
+<exptTwoScreenShot/fig7.png, id=30, 629.35126pt x 365.365pt>
 File: exptTwoScreenShot/fig7.png Graphic file (type png)
 <use exptTwoScreenShot/fig7.png>
-Package pdftex.def Info: exptTwoScreenShot/fig7.png  used on input line 133.
+Package pdftex.def Info: exptTwoScreenShot/fig7.png  used on input line 147.
 (pdftex.def)             Requested size: 188.80682pt x 109.61034pt.
-<exptTwoScreenShot/fig8.png, id=29, 626.34pt x 302.12875pt>
+<exptTwoScreenShot/fig8.png, id=31, 626.34pt x 302.12875pt>
 File: exptTwoScreenShot/fig8.png Graphic file (type png)
 <use exptTwoScreenShot/fig8.png>
-Package pdftex.def Info: exptTwoScreenShot/fig8.png  used on input line 139.
+Package pdftex.def Info: exptTwoScreenShot/fig8.png  used on input line 153.
 (pdftex.def)             Requested size: 187.90344pt x 90.63931pt.
-<exptTwoScreenShot/fig9.png, id=30, 631.35875pt x 318.18875pt>
+<exptTwoScreenShot/fig9.png, id=32, 631.35875pt x 318.18875pt>
 File: exptTwoScreenShot/fig9.png Graphic file (type png)
 <use exptTwoScreenShot/fig9.png>
-Package pdftex.def Info: exptTwoScreenShot/fig9.png  used on input line 145.
+Package pdftex.def Info: exptTwoScreenShot/fig9.png  used on input line 159.
 (pdftex.def)             Requested size: 189.40909pt x 95.45735pt.
 
 
@@ -365,34 +377,37 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./exptTwoScreenShot/fig6.png> <./exptTwoScreenShot/fig7.png> <./exptTwoScre
 enShot/fig8.png>]
-<exptTwoScreenShot/fig10.png, id=35, 884.30376pt x 477.785pt>
+<exptTwoScreenShot/fig10.png, id=37, 884.30376pt x 477.785pt>
 File: exptTwoScreenShot/fig10.png Graphic file (type png)
 <use exptTwoScreenShot/fig10.png>
-Package pdftex.def Info: exptTwoScreenShot/fig10.png  used on input line 153.
+Package pdftex.def Info: exptTwoScreenShot/fig10.png  used on input line 167.
 (pdftex.def)             Requested size: 265.29317pt x 143.3366pt.
  [6 <./exptTwoScreenShot/fig9.png> <./exptTwoScreenShot/fig10.png>]
 File: exptTwoScreenShot/fig10.png Graphic file (type png)
 <use exptTwoScreenShot/fig10.png>
-Package pdftex.def Info: exptTwoScreenShot/fig10.png  used on input line 160.
+Package pdftex.def Info: exptTwoScreenShot/fig10.png  used on input line 174.
 (pdftex.def)             Requested size: 265.29317pt x 143.3366pt.
- [7] (./PCP1211ExptThree.aux) ) 
+ [7] (./PCP1211ExptThree.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4236 strings out of 494923
- 63574 string characters out of 6180743
- 227349 words of memory out of 5000000
- 7489 multiletter control sequences out of 15000+600000
+ 4241 strings out of 494923
+ 63732 string characters out of 6180743
+ 226389 words of memory out of 5000000
+ 7494 multiletter control sequences out of 15000+600000
  4860 words of font info for 18 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,9n,37p,267b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb>
-Output written on PCP1211ExptThree.pdf (7 pages, 530269 bytes).
+ 36i,10n,37p,267b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on PCP1211ExptThree.pdf (7 pages, 668010 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
