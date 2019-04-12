@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  11 APR 2019 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  12 APR 2019 12:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -178,24 +178,120 @@ Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen123
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count96
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count97
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen124
+\Fld@menulength=\count98
+\Field@Width=\dimen125
+\Fld@charsize=\dimen126
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count99
+\c@Item=\count100
+\c@Hfootnote=\count101
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count102
+\c@bookmark@seq@number=\count103
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count94
+\lst@mode=\count104
 \lst@gtempboxa=\box28
 \lst@token=\toks18
-\lst@length=\count95
-\lst@currlwidth=\dimen123
-\lst@column=\count96
-\lst@pos=\count97
-\lst@lostspace=\dimen124
-\lst@width=\dimen125
-\lst@newlines=\count98
-\lst@lineno=\count99
-\lst@maxwidth=\dimen126
+\lst@length=\count105
+\lst@currlwidth=\dimen127
+\lst@column=\count106
+\lst@pos=\count107
+\lst@lostspace=\dimen128
+\lst@width=\dimen129
+\lst@newlines=\count108
+\lst@lineno=\count109
+\lst@maxwidth=\dimen130
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count100
-\lst@skipnumbers=\count101
+\c@lstnumber=\count110
+\lst@skipnumbers=\count111
 \lst@framebox=\box29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -206,11 +302,7 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(./PCP1211ExptThree.aux
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
-)
+(./PCP1211ExptThree.aux)
 \openout1 = `PCP1211ExptThree.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -224,6 +316,8 @@ LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
@@ -262,26 +356,23 @@ LaTeX Font Info:    ... okay on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen127
+\scratchcounter=\count112
+\scratchdimen=\dimen131
 \scratchbox=\box30
-\nofMPsegments=\count103
-\nofMParguments=\count104
+\nofMPsegments=\count113
+\nofMParguments=\count114
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen128
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen132
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
 \everyMPtoPDFconversion=\toks20
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
@@ -293,7 +384,26 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count108
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count118
+)
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
+
+(./PCP1211ExptThree.out) (./PCP1211ExptThree.out)
+\@outlinefile=\write4
+\openout4 = `PCP1211ExptThree.out'.
+
+\c@lstlisting=\count119
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -304,110 +414,96 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<exptTwoScreenShot/MapRedArch.png, id=10, 689.4558pt x 514.0806pt>
+<exptTwoScreenShot/MapRedArch.png, id=41, 689.4558pt x 514.0806pt>
 File: exptTwoScreenShot/MapRedArch.png Graphic file (type png)
 <use exptTwoScreenShot/MapRedArch.png>
 Package pdftex.def Info: exptTwoScreenShot/MapRedArch.png  used on input line 8
 2.
-(pdftex.def)             Requested size: 206.83833pt x 154.22537pt.
+(pdftex.def)             Requested size: 310.25224pt x 231.33412pt.
  [2 <./exptTwoScreenShot/MapRedArch.png>]
-<exptTwoScreenShot/fig1.png, id=16, 734.9859pt x 439.4016pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 110.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 110.
+<exptTwoScreenShot/fig1.png, id=54, 364.36125pt x 166.6225pt>
 File: exptTwoScreenShot/fig1.png Graphic file (type png)
 <use exptTwoScreenShot/fig1.png>
-Package pdftex.def Info: exptTwoScreenShot/fig1.png  used on input line 105.
-(pdftex.def)             Requested size: 220.49747pt x 131.82149pt.
-<exptTwoScreenShot/fig2.png, id=17, 732.7375pt x 302.12875pt>
+Package pdftex.def Info: exptTwoScreenShot/fig1.png  used on input line 119.
+(pdftex.def)             Requested size: 200.39929pt x 91.64265pt.
+<exptTwoScreenShot/fig2.png, id=55, 366.36874pt x 118.4425pt>
 File: exptTwoScreenShot/fig2.png Graphic file (type png)
 <use exptTwoScreenShot/fig2.png>
-Package pdftex.def Info: exptTwoScreenShot/fig2.png  used on input line 111.
-(pdftex.def)             Requested size: 249.12746pt x 102.72241pt.
-<exptTwoScreenShot/fig3.png, id=18, 737.75626pt x 360.34625pt>
+Package pdftex.def Info: exptTwoScreenShot/fig2.png  used on input line 125.
+(pdftex.def)             Requested size: 197.83617pt x 63.958pt.
+<exptTwoScreenShot/fig3.png, id=56, 503.8825pt x 171.64125pt>
 File: exptTwoScreenShot/fig3.png Graphic file (type png)
 <use exptTwoScreenShot/fig3.png>
-Package pdftex.def Info: exptTwoScreenShot/fig3.png  used on input line 117.
-(pdftex.def)             Requested size: 250.8338pt x 122.5161pt.
+Package pdftex.def Info: exptTwoScreenShot/fig3.png  used on input line 131.
+(pdftex.def)             Requested size: 221.70898pt x 75.52237pt.
 
 [3 <./exptTwoScreenShot/fig1.png> <./exptTwoScreenShot/fig2.png> <./exptTwoScre
 enShot/fig3.png>]
-<exptTwoScreenShot/fig4.png, id=22, 734.745pt x 439.6425pt>
+<exptTwoScreenShot/fig4.png, id=76, 504.88625pt x 320.19624pt>
 File: exptTwoScreenShot/fig4.png Graphic file (type png)
 <use exptTwoScreenShot/fig4.png>
-Package pdftex.def Info: exptTwoScreenShot/fig4.png  used on input line 123.
-(pdftex.def)             Requested size: 220.42519pt x 131.89375pt.
-<exptTwoScreenShot/fig5.png, id=23, 726.715pt x 208.78pt>
+Package pdftex.def Info: exptTwoScreenShot/fig4.png  used on input line 138.
+(pdftex.def)             Requested size: 171.65904pt x 108.86528pt.
+<exptTwoScreenShot/fig5.png, id=77, 501.875pt x 372.39125pt>
 File: exptTwoScreenShot/fig5.png Graphic file (type png)
 <use exptTwoScreenShot/fig5.png>
-Package pdftex.def Info: exptTwoScreenShot/fig5.png  used on input line 129.
-(pdftex.def)             Requested size: 247.07982pt x 70.98425pt.
-<exptTwoScreenShot/fig5Two.png, id=24, 412.54124pt x 141.52875pt>
-File: exptTwoScreenShot/fig5Two.png Graphic file (type png)
-<use exptTwoScreenShot/fig5Two.png>
-Package pdftex.def Info: exptTwoScreenShot/fig5Two.png  used on input line 135.
-
-(pdftex.def)             Requested size: 140.26216pt x 48.11913pt.
-<exptTwoScreenShot/fig6.png, id=25, 734.745pt x 439.6425pt>
+Package pdftex.def Info: exptTwoScreenShot/fig5.png  used on input line 144.
+(pdftex.def)             Requested size: 150.56366pt x 111.71823pt.
+ [4 <./exptTwoScreenShot/fig4.png> <./exptTwoScreenShot/fig5.png>]
+<exptTwoScreenShot/fig6.png, id=86, 503.8825pt x 120.45pt>
 File: exptTwoScreenShot/fig6.png Graphic file (type png)
 <use exptTwoScreenShot/fig6.png>
-Package pdftex.def Info: exptTwoScreenShot/fig6.png  used on input line 141.
-(pdftex.def)             Requested size: 220.42519pt x 131.89375pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./exptTwoScreenShot/fig4.png> <./exptTwoScreenShot/fig5.png> <./exptTwoScre
-enShot/fig5Two.png>]
-<exptTwoScreenShot/fig7.png, id=30, 629.35126pt x 365.365pt>
+Package pdftex.def Info: exptTwoScreenShot/fig6.png  used on input line 150.
+(pdftex.def)             Requested size: 251.94063pt x 60.22484pt.
+<exptTwoScreenShot/fig7.png, id=87, 753.81625pt x 459.7175pt>
 File: exptTwoScreenShot/fig7.png Graphic file (type png)
 <use exptTwoScreenShot/fig7.png>
-Package pdftex.def Info: exptTwoScreenShot/fig7.png  used on input line 147.
-(pdftex.def)             Requested size: 188.80682pt x 109.61034pt.
-<exptTwoScreenShot/fig8.png, id=31, 626.34pt x 302.12875pt>
+Package pdftex.def Info: exptTwoScreenShot/fig7.png  used on input line 156.
+(pdftex.def)             Requested size: 226.14662pt x 137.9163pt.
+<exptTwoScreenShot/fig8.png, id=88, 758.835pt x 391.4625pt>
 File: exptTwoScreenShot/fig8.png Graphic file (type png)
 <use exptTwoScreenShot/fig8.png>
-Package pdftex.def Info: exptTwoScreenShot/fig8.png  used on input line 153.
-(pdftex.def)             Requested size: 187.90344pt x 90.63931pt.
-<exptTwoScreenShot/fig9.png, id=32, 631.35875pt x 318.18875pt>
+Package pdftex.def Info: exptTwoScreenShot/fig8.png  used on input line 162.
+(pdftex.def)             Requested size: 227.65225pt x 117.43965pt.
+ [5 <./exptTwoScreenShot/fig6.png> <./exptTwoScreenShot/fig7.png> <./exptTwoScr
+eenShot/fig8.png>]
+<exptTwoScreenShot/fig9.png, id=99, 759.83875pt x 496.85625pt>
 File: exptTwoScreenShot/fig9.png Graphic file (type png)
 <use exptTwoScreenShot/fig9.png>
-Package pdftex.def Info: exptTwoScreenShot/fig9.png  used on input line 159.
-(pdftex.def)             Requested size: 189.40909pt x 95.45735pt.
+Package pdftex.def Info: exptTwoScreenShot/fig9.png  used on input line 170.
+(pdftex.def)             Requested size: 227.95337pt x 149.05801pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+ [6 <./exptTwoScreenShot/fig9.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./exptTwoScreenShot/fig6.png> <./exptTwoScreenShot/fig7.png> <./exptTwoScre
-enShot/fig8.png>]
-<exptTwoScreenShot/fig10.png, id=37, 884.30376pt x 477.785pt>
-File: exptTwoScreenShot/fig10.png Graphic file (type png)
-<use exptTwoScreenShot/fig10.png>
-Package pdftex.def Info: exptTwoScreenShot/fig10.png  used on input line 167.
-(pdftex.def)             Requested size: 265.29317pt x 143.3366pt.
- [6 <./exptTwoScreenShot/fig9.png> <./exptTwoScreenShot/fig10.png>]
-File: exptTwoScreenShot/fig10.png Graphic file (type png)
-<use exptTwoScreenShot/fig10.png>
-Package pdftex.def Info: exptTwoScreenShot/fig10.png  used on input line 174.
-(pdftex.def)             Requested size: 265.29317pt x 143.3366pt.
- [7] (./PCP1211ExptThree.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+(./PCP1211ExptThree.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package rerunfilecheck Info: File `PCP1211ExptThree.out' has not changed.
+(rerunfilecheck)             Checksum: 1672A578E20BD41C4FAC311328D5F291;331.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 4241 strings out of 494923
- 63732 string characters out of 6180743
- 226389 words of memory out of 5000000
- 7494 multiletter control sequences out of 15000+600000
- 4860 words of font info for 18 fonts, out of 8000000 for 9000
+ 7819 strings out of 494923
+ 118049 string characters out of 6180743
+ 304572 words of memory out of 5000000
+ 11002 multiletter control sequences out of 15000+600000
+ 5028 words of font info for 19 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,10n,37p,267b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,37p,288b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on PCP1211ExptThree.pdf (7 pages, 668010 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on PCP1211ExptThree.pdf (6 pages, 814594 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 132 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 34 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
