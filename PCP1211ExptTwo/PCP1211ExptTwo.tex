@@ -37,7 +37,7 @@ Installation of Oracle VirtualBox with guest Operating System as Ubuntu 16.04.In
 
 \begin{enumerate}
 	\item Launch Ubuntu 16.04 LTS.
-	\item Login to the OS with sudo permission and install the following packages using apt-get command
+	\item Login to the OS with sudo permission and install the following packages using apt-get command.
 	\begin{itemize}
 		\item openssh-server
 		\item openssh-client
@@ -45,6 +45,25 @@ Installation of Oracle VirtualBox with guest Operating System as Ubuntu 16.04.In
 		\item javac compiler
                      \item hadoop 1.0.3
 	\end{itemize}
+	\item Create a new user with sudo permission (hduser:hadoop).
+    \item Log into the hduser and do the following:
+    \begin{itemize}
+    	\item Copy the hadoop executable to /usr/local directory.
+    	\item Install and configure appropriate environment variables and parameters in the following configuration files: 
+    	\begin{itemize}
+    		\item conf/hadoop-env.sh : Configure JAVA\_HOME and HADOOP\_HOME with appropriate values.
+    		\item conf/core-site.xml : Configure hadoop default temp directory and default file system.
+    		\item conf/mapred-site.xml : JobTracker name and port number.
+    		\item conf/hdfs-site.xml : Default replication factor specification.
+    	\end{itemize}
+        \item Format the namenode by specified dfs.name.dir by running command : /usr/local/hadoop/bin/hadoop namenode -format .
+        \item Starting the local hadoop single node cluster by running command: 
+        /usr/local/hadoop/bin/start-all.sh .
+        \item To check the current running Hadoop Processes by running command : 
+        jps .
+        \item Stopping the local hadoop single node cluster by running command : 
+        /usr/local/hadoop/bin/stop-all.sh .
+    \end{itemize}
 \pagebreak
 \end{enumerate}
 
@@ -109,13 +128,24 @@ Installation of Oracle VirtualBox with guest Operating System as Ubuntu 16.04.In
 		\label{fig:9}
 	\end{figure}
 
-\pagebreak
  \pagebreak
 
 \begin{figure}[h]
 	\includegraphics[scale=0.35,center]{exptTwoScreenShot/startall.png}
 	\caption{Starting hadoop NameNode,Datanode,JobTracker and TaskTracker.}
 	\label{fig:11}
+\end{figure}
+
+\begin{figure}[h]
+	\includegraphics[scale=0.55,center]{exptTwoScreenShot/fig12.png}
+	\caption{Showing hadoop NameNode,Datanode,JobTracker and TaskTracker Processes.}
+	\label{fig:12}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[scale=0.40,center]{exptTwoScreenShot/fig13.png}
+	\caption{Stopping hadoop NameNode,DataNode,JobTracker and TaskTracker.}
 \end{figure}
 
 
