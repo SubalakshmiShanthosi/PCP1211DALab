@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  15 APR 2019 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  25 APR 2019 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,23 +302,26 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
 (./PCP1211ExptThree.aux)
 \openout1 = `PCP1211ExptThree.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -385,7 +388,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 13.
+Package hyperref Info: Link coloring OFF on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -395,121 +398,123 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-LaTeX Info: Redefining \nameref on input line 13.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (./PCP1211ExptThree.out) (./PCP1211ExptThree.out)
 \@outlinefile=\write4
 \openout4 = `PCP1211ExptThree.out'.
 
 \c@lstlisting=\count119
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<exptTwoScreenShot/MapRedArch.png, id=41, 689.4558pt x 514.0806pt>
+<exptTwoScreenShot/MapRedArch.png, id=45, 689.4558pt x 514.0806pt>
 File: exptTwoScreenShot/MapRedArch.png Graphic file (type png)
 <use exptTwoScreenShot/MapRedArch.png>
-Package pdftex.def Info: exptTwoScreenShot/MapRedArch.png  used on input line 8
-2.
+Package pdftex.def Info: exptTwoScreenShot/MapRedArch.png  used on input line 1
+06.
 (pdftex.def)             Requested size: 310.25224pt x 231.33412pt.
  [2 <./exptTwoScreenShot/MapRedArch.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 110.
+(Font)              <7> on input line 134.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 110.
-<exptTwoScreenShot/fig1.png, id=54, 364.36125pt x 166.6225pt>
+(Font)              <5> on input line 134.
+
+[3]
+<exptTwoScreenShot/fig1.png, id=112, 364.36125pt x 166.6225pt>
 File: exptTwoScreenShot/fig1.png Graphic file (type png)
 <use exptTwoScreenShot/fig1.png>
-Package pdftex.def Info: exptTwoScreenShot/fig1.png  used on input line 119.
+Package pdftex.def Info: exptTwoScreenShot/fig1.png  used on input line 200.
 (pdftex.def)             Requested size: 200.39929pt x 91.64265pt.
-<exptTwoScreenShot/fig2.png, id=55, 366.36874pt x 118.4425pt>
+<exptTwoScreenShot/fig2.png, id=113, 366.36874pt x 118.4425pt>
 File: exptTwoScreenShot/fig2.png Graphic file (type png)
 <use exptTwoScreenShot/fig2.png>
-Package pdftex.def Info: exptTwoScreenShot/fig2.png  used on input line 125.
+Package pdftex.def Info: exptTwoScreenShot/fig2.png  used on input line 206.
 (pdftex.def)             Requested size: 197.83617pt x 63.958pt.
-<exptTwoScreenShot/fig3.png, id=56, 503.8825pt x 171.64125pt>
+<exptTwoScreenShot/fig3.png, id=114, 503.8825pt x 171.64125pt>
 File: exptTwoScreenShot/fig3.png Graphic file (type png)
 <use exptTwoScreenShot/fig3.png>
-Package pdftex.def Info: exptTwoScreenShot/fig3.png  used on input line 131.
+Package pdftex.def Info: exptTwoScreenShot/fig3.png  used on input line 212.
 (pdftex.def)             Requested size: 221.70898pt x 75.52237pt.
-
-[3 <./exptTwoScreenShot/fig1.png> <./exptTwoScreenShot/fig2.png> <./exptTwoScre
-enShot/fig3.png>]
-<exptTwoScreenShot/fig4.png, id=76, 504.88625pt x 320.19624pt>
+ [4 <./exptTwoScreenShot/fig1.png> <./exptTwoScreenShot/fig2.png> <./exptTwoScr
+eenShot/fig3.png>]
+<exptTwoScreenShot/fig4.png, id=139, 504.88625pt x 320.19624pt>
 File: exptTwoScreenShot/fig4.png Graphic file (type png)
 <use exptTwoScreenShot/fig4.png>
-Package pdftex.def Info: exptTwoScreenShot/fig4.png  used on input line 138.
+Package pdftex.def Info: exptTwoScreenShot/fig4.png  used on input line 219.
 (pdftex.def)             Requested size: 171.65904pt x 108.86528pt.
-<exptTwoScreenShot/fig5.png, id=77, 501.875pt x 372.39125pt>
+<exptTwoScreenShot/fig5.png, id=140, 501.875pt x 372.39125pt>
 File: exptTwoScreenShot/fig5.png Graphic file (type png)
 <use exptTwoScreenShot/fig5.png>
-Package pdftex.def Info: exptTwoScreenShot/fig5.png  used on input line 144.
+Package pdftex.def Info: exptTwoScreenShot/fig5.png  used on input line 225.
 (pdftex.def)             Requested size: 150.56366pt x 111.71823pt.
-<exptTwoScreenShot/fig6.png, id=78, 503.8825pt x 120.45pt>
+<exptTwoScreenShot/fig6.png, id=141, 503.8825pt x 120.45pt>
 File: exptTwoScreenShot/fig6.png Graphic file (type png)
 <use exptTwoScreenShot/fig6.png>
-Package pdftex.def Info: exptTwoScreenShot/fig6.png  used on input line 149.
+Package pdftex.def Info: exptTwoScreenShot/fig6.png  used on input line 230.
 (pdftex.def)             Requested size: 251.94063pt x 60.22484pt.
-<exptTwoScreenShot/fig7.png, id=79, 753.81625pt x 459.7175pt>
+<exptTwoScreenShot/fig7.png, id=142, 753.81625pt x 459.7175pt>
 File: exptTwoScreenShot/fig7.png Graphic file (type png)
 <use exptTwoScreenShot/fig7.png>
-Package pdftex.def Info: exptTwoScreenShot/fig7.png  used on input line 155.
+Package pdftex.def Info: exptTwoScreenShot/fig7.png  used on input line 236.
 (pdftex.def)             Requested size: 226.14662pt x 137.9163pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<exptTwoScreenShot/fig8.png, id=80, 758.835pt x 391.4625pt>
+<exptTwoScreenShot/fig8.png, id=143, 758.835pt x 391.4625pt>
 File: exptTwoScreenShot/fig8.png Graphic file (type png)
 <use exptTwoScreenShot/fig8.png>
-Package pdftex.def Info: exptTwoScreenShot/fig8.png  used on input line 161.
+Package pdftex.def Info: exptTwoScreenShot/fig8.png  used on input line 242.
 (pdftex.def)             Requested size: 227.65225pt x 117.43965pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4 <./exptTwoScreenShot/fig4.png> <./exptTwoScreenShot/fig5.png> <./exptTwoScre
+[5 <./exptTwoScreenShot/fig4.png> <./exptTwoScreenShot/fig5.png> <./exptTwoScre
 enShot/fig6.png>]
-<exptTwoScreenShot/fig9.png, id=91, 759.83875pt x 496.85625pt>
+<exptTwoScreenShot/fig9.png, id=154, 759.83875pt x 496.85625pt>
 File: exptTwoScreenShot/fig9.png Graphic file (type png)
 <use exptTwoScreenShot/fig9.png>
-Package pdftex.def Info: exptTwoScreenShot/fig9.png  used on input line 169.
+Package pdftex.def Info: exptTwoScreenShot/fig9.png  used on input line 250.
 (pdftex.def)             Requested size: 227.95337pt x 149.05801pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
- [5 <./exptTwoScreenShot/fig7.png> <./exptTwoScreenShot/fig8.png> <./exptTwoScr
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+ [6 <./exptTwoScreenShot/fig7.png> <./exptTwoScreenShot/fig8.png> <./exptTwoScr
 eenShot/fig9.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
  (./PCP1211ExptThree.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
 Package rerunfilecheck Info: File `PCP1211ExptThree.out' has not changed.
-(rerunfilecheck)             Checksum: 1672A578E20BD41C4FAC311328D5F291;331.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
+(rerunfilecheck)             Checksum: 4DF478AB95E2BFF01068E6D79EE8EE39;371.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 258.
  ) 
 Here is how much of TeX's memory you used:
- 7818 strings out of 494923
- 118043 string characters out of 6180743
- 304572 words of memory out of 5000000
- 11002 multiletter control sequences out of 15000+600000
- 5028 words of font info for 19 fonts, out of 8000000 for 9000
+ 8051 strings out of 494923
+ 121075 string characters out of 6180743
+ 360043 words of memory out of 5000000
+ 11174 multiletter control sequences out of 15000+600000
+ 5494 words of font info for 21 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,10n,37p,288b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,72p,288b,1685s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on PCP1211ExptThree.pdf (5 pages, 814288 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on PCP1211ExptThree.pdf (6 pages, 833408 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 33 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
