@@ -16,7 +16,7 @@
 \textbf{\LARGE Running Hadoop On Ubuntu Linux (Single-Node Cluster)}
 \end{center}
 
-\raggedright Expt No: 2 \hfill \raggedleft March  07, 2019 \\ 
+\raggedright Expt No: 2 \hfill \raggedleft Feb  20, 2019 \\ 
 
 \raggedright Author: Subalakshmi Shanthosi S  (186001008) \par 
 
@@ -28,7 +28,7 @@ To configure and install  Hadoop  in Ubuntu 16.04 LTS OS flavour.
 \section{Software's Used}
 \begin{itemize}
   \item Ubuntu  16.04 LTS
-  \item Hadoop 2.7.3
+  \item Hadoop 1.0.3
 \end{itemize}
 
 \section{Description}
@@ -37,14 +37,33 @@ Installation of Oracle VirtualBox with guest Operating System as Ubuntu 16.04.In
 
 \begin{enumerate}
 	\item Launch Ubuntu 16.04 LTS.
-	\item Login to the OS with sudo permission and install the following packages using apt-get command
+	\item Login to the OS with sudo permission and install the following packages using apt-get command.
 	\begin{itemize}
 		\item openssh-server
 		\item openssh-client
 		\item java jdk 8
 		\item javac compiler
-                     \item hadoop 2.7.3
+                     \item hadoop 1.0.3
 	\end{itemize}
+	\item Create a new user with sudo permission (hduser:hadoop).
+    \item Log into the hduser and do the following:
+    \begin{itemize}
+    	\item Copy the hadoop executable to /usr/local directory.
+    	\item Install and configure appropriate environment variables and parameters in the following configuration files: 
+    	\begin{itemize}
+    		\item conf/hadoop-env.sh : Configure JAVA\_HOME and HADOOP\_HOME with appropriate values.
+    		\item conf/core-site.xml : Configure hadoop default temp directory and default file system.
+    		\item conf/mapred-site.xml : JobTracker name and port number.
+    		\item conf/hdfs-site.xml : Default replication factor specification.
+    	\end{itemize}
+        \item Format the namenode by specified dfs.name.dir by running command : /usr/local/hadoop/bin/hadoop namenode -format .
+        \item Starting the local hadoop single node cluster by running command: 
+        /usr/local/hadoop/bin/start-all.sh .
+        \item To check the current running Hadoop Processes by running command : 
+        jps .
+        \item Stopping the local hadoop single node cluster by running command : 
+        /usr/local/hadoop/bin/stop-all.sh .
+    \end{itemize}
 \pagebreak
 \end{enumerate}
 
@@ -86,8 +105,8 @@ Installation of Oracle VirtualBox with guest Operating System as Ubuntu 16.04.In
 \end{figure}
 
 \begin{figure}[h]
-	\includegraphics[scale=0.30,center]{exptTwoScreenShot/fig6.png}
-	\caption{Installation of Hadoop 2.7.3 in new user login.}
+	\includegraphics[scale=0.45,center]{exptTwoScreenShot/fig6.png}
+	\caption{Installation of Hadoop 1.0.3 in new user login.}
 	\label{fig:6}
 \end{figure}
 \newpage
@@ -109,13 +128,25 @@ Installation of Oracle VirtualBox with guest Operating System as Ubuntu 16.04.In
 		\label{fig:9}
 	\end{figure}
 
-\pagebreak
+ \pagebreak
 
-	\begin{figure}[h]
-		\includegraphics[scale=0.30,center]{exptTwoScreenShot/fig10.png}
-		\caption{Formatting HDFS file system via the NameNode.}
-		\label{fig:8}
-	\end{figure}
+\begin{figure}[h]
+	\includegraphics[scale=0.35,center]{exptTwoScreenShot/startall.png}
+	\caption{Starting hadoop NameNode,Datanode,JobTracker and TaskTracker.}
+	\label{fig:11}
+\end{figure}
+
+\begin{figure}[h]
+	\includegraphics[scale=0.55,center]{exptTwoScreenShot/fig12.png}
+	\caption{Showing hadoop NameNode,Datanode,JobTracker and TaskTracker Processes.}
+	\label{fig:12}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+	\includegraphics[scale=0.40,center]{exptTwoScreenShot/fig13.png}
+	\caption{Stopping hadoop NameNode,DataNode,JobTracker and TaskTracker.}
+\end{figure}
 
 
 \section{Result}
