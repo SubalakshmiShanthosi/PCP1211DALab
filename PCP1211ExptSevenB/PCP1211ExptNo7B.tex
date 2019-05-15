@@ -23,17 +23,17 @@
 \begin{document}
 \setcounter{secnumdepth}{-1} 
 \begin{center}
-\textbf{\LARGE  Implementation of Support Vector Machine Classification using R package - Iris Dataset.}
+\textbf{\LARGE  Implementation of Support Vector Machine Classification using R package - Caret for Heart Disease Recognition Dataset.}
 \end{center}
 
-\raggedright Expt No: 7 (a) \hfill \raggedleft May 2,2019 \\ 
+\raggedright Expt No: 7 (b) \hfill \raggedleft May 8,2019 \\ 
 
 \raggedright Author: Subalakshmi Shanthosi S (186001008) \par 
 
 \noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
 
 \section{Aim}
-Implementation of Support Vector Machine(SVM) using R package- Classification and Regression Training(CARET) for Iris dataset classification.
+Implementation of Support Vector Machine(SVM) using R package- Classification and Regression Training(CARET) for Heart Disease Recognition Dataset.
 
 \section{Description}
 \begin{enumerate}
@@ -43,7 +43,7 @@ Implementation of Support Vector Machine(SVM) using R package- Classification an
 		\item SVM can be applied for both classification and regression algorithms but predominantly used for classification problems.	 
 		\item Support Vector Algorithm Working:
 		\begin{itemize}
-		 \item Input : Data points from the dataset (iris).
+		 \item Input : Data points from the dataset (Heart Disease recognition dataset).
 		 \item Output : Hyperplane - The line which best separates the tags.
 		 \item Careful choice of Kernal function which decides the accuracy of the model.	
 		\end{itemize}
@@ -61,7 +61,7 @@ Implementation of Support Vector Machine(SVM) using R package- Classification an
 	\end{itemize}
     \item Classification hyperplane based on the data point's distribution is presented below:
      \begin{figure}[h]
-    	\includegraphics[scale=0.30,center]{svmClassification.png}
+    	\includegraphics[scale=0.70,center]{svmClassification.png}
     	\caption{SVM Linear Model.}
     	\label{fig:1}
     \end{figure}
@@ -83,29 +83,34 @@ Implementation of Support Vector Machine(SVM) using R package- Classification an
 	\end{itemize}
 	\item Support Vector Machine and Visualisation Packages
 	\begin{itemize}
-		\item caret
+		\item 
 		\item ggplot2 (Visualisation)
 		\item GGally (Visualisation)
 	\end{itemize}				
 \end{enumerate}
 
-\section{Dataset Description - Iris}
+\section{Dataset Description - Heart Disease Databases}
 \begin{itemize}
-	\item This famous (Fisher's or Anderson's) iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica.
-	
-	\item Iris is a data frame with :
+	\item  This database contains 76 attributes, but all published experiments refer to using a subset of 14 of them.
+	\item The "goal" field refers to the presence of heart disease
+	in the patient.  It is integer valued from 0 (no presence) to 4.
+	Experiments with the Cleveland database have concentrated on simply
+	attempting to distinguish presence (values 1,2,3,4) from absence (value
+	0).  	
+\item Number of instances in Heart Disease Dataset:
 	\begin{itemize}
-		\item 150 cases (rows).
-		\item 5 features/variables(columns):
-		\begin{itemize}
-			\item Sepal Length.
-			\item Sepal Width.
-			\item Petal Length.
-			\item Petal Width.
-			\item Species.
-		\end{itemize}
-	   \item  Iris \textit{setosa} is linearly separable from \textit{ Iris versicolor and virginica}
-	\end{itemize} 	
+		\item Cleveland: 303
+		\item   Hungarian: 294
+		\item Switzerland: 123
+		\item Long Beach VA: 200
+	\end{itemize}
+\item Attribute information: 
+\begin{figure}[h]
+	\includegraphics[scale=0.55,center]{heartDiseaseDataset.png}
+	\caption{Heart Disease Detection Database important attributes.}
+	\label{fig:2}
+\end{figure}
+	
 \end{itemize}
 \section{Procedure}
 
@@ -198,38 +203,12 @@ Implementation of Support Vector Machine(SVM) using R package- Classification an
 \textbf{False Negative(FN)-} These are the cases where prediction is no and actual value is no.
 \end{itemize}
 
-\includegraphics[scale=0.70]{confusion_matrix.png}
-\begin{itemize}
-	\item \textbf{Accuracy}: Overall, how often is the classifier correct?
-				(TP+TN)/total = (100+50)/165 = 0.91
-     \item \textbf{Misclassification Rate}: Overall, how often is it wrong?
-				(FP+FN)/total = (10+5)/165 = 0.09
-                equivalent to 1 minus Accuracy
-                also known as "Error Rate"
-\item \textbf{True Positive Rate}: When it's actually yes, how often does it predict yes?
-				TP/actual yes = 100/105 = 0.95
-				also known as "Sensitivity" or "Recall"
-\item \textbf{False Positive Rate}: When it's actually no, how often does it predict yes?
-				FP/actual no = 10/60 = 0.17
-\item \textbf{True Negative Rate}: When it's actually no, how often does it predict no?
-				TN/actual no = 50/60 = 0.83
-				equivalent to 1 minus False Positive Rate
-				also known as "Specificity"
-\item \textbf{Precision}: When it predicts yes, how often is it correct?
-				TP/predicted yes = 100/110 = 0.91
-\item \textbf{Prevalence}: How often does the yes condition actually occur in our sample?
-				actual yes/total = 105/165 = 0.64
-\end{itemize}
 \section{Coding}
 
-\lstinputlisting{svmIris.r}
+\lstinputlisting{svmHeartDisease.r}
 \section{Output} 
+
 \verbatiminput{svmOutput.txt}
-
-\fbox{\begin{minipage}{35em}
-		\includegraphics[page=1,scale=0.7]{svm.pdf}
-	\end{minipage}}
-
 \section{Result}
 Thus the implementation of Support Vector machine is executed successfully using R program.
 

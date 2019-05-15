@@ -16,6 +16,8 @@
 #Load packages:
 #--------------
 
+library("TeachingDemos")
+txtStart("clusteringOutput.txt")
 library("cluster")
 library("factoextra")
 library("magrittr")
@@ -101,3 +103,5 @@ res.nbclust <- USArrests %>%
 # Visualize
 library(factoextra)
 fviz_nbclust(res.nbclust, ggtheme = theme_minimal())
+
+txtStop()

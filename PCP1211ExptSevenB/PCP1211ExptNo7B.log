@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  15 MAY 2019 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  15 MAY 2019 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**PCP1211ExptNo7A.tex
-(./PCP1211ExptNo7A.tex
+**PCP1211ExptNo7B.tex
+(./PCP1211ExptNo7B.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -584,8 +584,12 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip76
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (./PCP1211ExptNo7A.aux)
-\openout1 = `PCP1211ExptNo7A.aux'.
+) (./PCP1211ExptNo7B.aux
+
+LaTeX Warning: Label `fig:2' multiply defined.
+
+)
+\openout1 = `PCP1211ExptNo7B.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -601,8 +605,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 23.
@@ -707,134 +710,98 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count288
-<svmClassification.png, id=1, 547.04375pt x 493.845pt>
+<svmClassification.png, id=1, 251.94125pt x 201.75375pt>
 File: svmClassification.png Graphic file (type png)
 <use svmClassification.png>
 Package pdftex.def Info: svmClassification.png  used on input line 64.
-(pdftex.def)             Requested size: 164.11438pt x 148.15463pt.
-<svmNonLinearData.png, id=3, 599.23875pt x 449.68pt>
+(pdftex.def)             Requested size: 176.35767pt x 141.22665pt.
+<svmNonLinearData.png, id=2, 344.28625pt x 271.0125pt>
 File: svmNonLinearData.png Graphic file (type png)
 <use svmNonLinearData.png>
 Package pdftex.def Info: svmNonLinearData.png  used on input line 69.
-(pdftex.def)             Requested size: 179.77301pt x 134.90503pt.
+(pdftex.def)             Requested size: 103.28667pt x 81.30437pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./svmClassification.png>] 
-[2 <./svmNonLinearData.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 144.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./svmClassification.png>]
+<heartDiseaseDataset.png, id=13, 966.61125pt x 325.215pt>
+File: heartDiseaseDataset.png Graphic file (type png)
+<use heartDiseaseDataset.png>
+Package pdftex.def Info: heartDiseaseDataset.png  used on input line 109.
+(pdftex.def)             Requested size: 531.63783pt x 178.86879pt.
+ [2 <./svmNonLinearData.png> <./heartDiseaseDataset.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 144.
+LaTeX Font Info:    Try loading font information for U+msb on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (15.0pt too wide) detected at line 183
+Overfull \hbox (15.0pt too wide) detected at line 188
 [][] 
  []
 
-[3]
-<confusion_matrix.png, id=29, 366.61969pt x 209.28188pt>
-File: confusion_matrix.png Graphic file (type png)
-<use confusion_matrix.png>
-Package pdftex.def Info: confusion_matrix.png  used on input line 201.
-(pdftex.def)             Requested size: 256.63202pt x 146.49629pt.
- (./svmIris.r
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
-Overfull \hbox (21.8558pt too wide) in paragraph at lines 1--3
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[4 <./confusion_matrix.png>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 23.
+[3] [4] (./svmHeartDisease.r
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 23.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 14.
 
-Overfull \hbox (333.85898pt too wide) in paragraph at lines 48--50
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][] 
+Overfull \hbox (171.85733pt too wide) in paragraph at lines 14--16
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (123.85684pt too wide) in paragraph at lines 54--56
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][] 
+[5]
+Overfull \hbox (9.85568pt too wide) in paragraph at lines 72--73
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (39.85599pt too wide) in paragraph at lines 58--60
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][] 
- []
-
-
-Overfull \hbox (9.85568pt too wide) in paragraph at lines 60--61
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (333.85898pt too wide) in paragraph at lines 68--70
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][] 
+[6]
+Overfull \hbox (39.85599pt too wide) in paragraph at lines 108--109
+[][][][][][][][][][][][][][][][][][] 
  []
 
 )
 File: svmOutput.txt  (verbatim)
- [5] [6]
-Missing character: There is no ‚ in font cmtt10!
-Missing character: There is no Ä in font cmtt10!
-Missing character: There is no ò in font cmtt10!
-Missing character: There is no ‚ in font cmtt10!
-Missing character: There is no Ä in font cmtt10!
-Missing character: There is no ô in font cmtt10!
- [7]
-<svm.pdf, id=45, page=1, 344.28625pt x 276.03125pt>
-File: svm.pdf Graphic file (type pdf)
-<use svm.pdf, page 1>
-Package pdftex.def Info: svm.pdf , page1 used on input line 231.
-(pdftex.def)             Requested size: 240.99872pt x 193.22055pt.
- [8 <./svm.pdf>] (./PCP1211ExptNo7A.aux) ) 
+ [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
+[22] [23] [24] [25] [26] [27] [28] [29] [30] [31] (./PCP1211ExptNo7B.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 15360 strings out of 494923
- 282618 string characters out of 6180743
- 466251 words of memory out of 5000000
- 18508 multiletter control sequences out of 15000+600000
- 534040 words of font info for 37 fonts, out of 8000000 for 9000
+ 15351 strings out of 494923
+ 282516 string characters out of 6180743
+ 464290 words of memory out of 5000000
+ 18501 multiletter control sequences out of 15000+600000
+ 533694 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,12n,37p,10387b,1385s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/subalakshmi/.texlive2017/texm
-f-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on PCP1211ExptNo7A.pdf (8 pages, 206510 bytes).
+ 41i,12n,37p,10387b,1387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/subalakshmi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm10
+00.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb>
+Output written on PCP1211ExptNo7B.pdf (31 pages, 210989 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 163 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
