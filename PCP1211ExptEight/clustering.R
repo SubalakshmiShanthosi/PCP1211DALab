@@ -4,15 +4,12 @@
 #cluster package: for computing clustering
 #factoextra package : for elegant ggplot2-based data visualization.
 # -------------------------------------------------------------------
-
 #Install:
 # -------------------------------------------------------------------
-
 #install.packages("factoextra")
 #install.packages("cluster")
 #install.packages("magrittr")
 #install.packages("NbClust")
-
 #Load packages:
 # -------------------------------------------------------------------
 
@@ -88,8 +85,6 @@ fviz_dend(res.hc, k = 4, # Cut in four groups
 
 #Determining the optimal number of clusters
 # -------------------------------------------------------------------
-
-
 set.seed(123)
 
 # Compute
@@ -103,5 +98,4 @@ res.nbclust <- USArrests %>%
 # Visualize
 library(factoextra)
 fviz_nbclust(res.nbclust, ggtheme = theme_minimal())
-
 txtStop()

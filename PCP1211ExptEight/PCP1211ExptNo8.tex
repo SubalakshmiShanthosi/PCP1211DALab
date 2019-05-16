@@ -1,3 +1,4 @@
+
 \documentclass[a4paper,10pt]{article}
 \usepackage[lmargin=2.0cm, rmargin=1.0cm,tmargin=3.5cm,bmargin=1.5cm]{geometry}
 \usepackage{color,graphics}
@@ -122,7 +123,7 @@ Implementation of different clustering techniques like - Partitioning and Hierar
 \section{Clustering Algorithms}
 
 \begin{itemize}
-	\item The k-Means Algorithm - Introduction:
+	\item \textbf{The k-Means Algorithm - Introduction}:
 	\begin{enumerate}
 		\item Split the input as k categories.
 		\item Required: A distance measure - Eucilidean distance
@@ -178,7 +179,7 @@ Implementation of different clustering techniques like - Partitioning and Hierar
     		\algrule
     \end{itemize}
     \end{algorithm}
-\item K-medoids Algorithm - Introduction:
+\item \textbf{K-medoids Algorithm - Introduction}:
 \begin{enumerate}
         \item K-means is sensitive to outliers and compute large distance.
         \item Change in distance measure as follows :
@@ -231,7 +232,7 @@ Implementation of different clustering techniques like - Partitioning and Hierar
 		\end{itemize}
 		\end{algorithm}
 \end{itemize}
-\item Hierarcial clustering- Introduction:
+\item \textbf{Hierarcial clustering- Introduction}:
 \begin{enumerate}
 	\item Clusters at a given level are created by merging clusters at the next lower level.
 	\item Each cluster at the lowest level contains a single observation.
@@ -242,7 +243,37 @@ Implementation of different clustering techniques like - Partitioning and Hierar
          \item Divisive : top-down
 	\end{itemize}
 \end{enumerate}
+\item Pseudocode :
+\begin{algorithm}
+	\caption{Hierarcial clustering}
+	\algrule
+	\begin{itemize}
+		\Statex \textbullet~\textbf{Algorithm :}
+		\begin{enumerate}
+			\item Begin with the disjoint clustering having level L(0) = 0 and sequence number m = 0.
+			\item Find the least dissimilar pair of clusters in the current clustering, say pair (r), (s), according to.
+			\begin{equation}
+			d[(r),(s)] = min d[(i),(j)]
+			\end{equation}
+			\textit{where the minimum is over all pairs of clusters in the current clustering.
+			}
+			\item Increment the sequence number : m = m +1. Merge clusters (r) and (s) into a single cluster to form the next clustering m. Set the level of this clustering to
+			\begin{equation}
+		     L(m) = d[(r),(s)]
+			\end{equation}
+			\item Update the proximity matrix, D, by deleting the rows and columns corresponding to clusters (r) and (s) and adding a row and column corresponding to the newly formed cluster. The proximity between the new cluster, denoted (r,s) and old cluster (k) is defined in this way:
+			\begin{equation}
+			d[(k), (r,s)] = min d[(k),(r)], d[(k),(s)]
+			\end{equation}
+			\item If all objects are in one cluster, stop. Else, go to step 2.
+			
+		\end{enumerate}
+		\algrule
+	\end{itemize}
+\end{algorithm}
 \end{itemize}
+
+\newpage
 \section{Confusion Matrix}
 \begin{itemize}
 \item A confusion matrix is a table that can be generated for a classifier on a Data Set 
@@ -255,20 +286,39 @@ Implementation of different clustering techniques like - Partitioning and Hierar
 \linebreak
 \textbf{False Negative(FN)-} These are the cases where prediction is no and actual value is no.
 \end{itemize}
-\begin{comment}
+
 
 \section{Coding}
 
 \lstinputlisting{clustering.R}
+\newpage
 \section{Output} 
-\verbatiminput{svmOutput.txt}
-\begin{comment}
+\verbatiminput{clusteringOutput.txt}
 \fbox{\begin{minipage}{35em}
-		\includegraphics[page=1,scale=0.7]{svm.pdf}
+		\includegraphics[page=1,scale=0.4]{Expt8OP/clusterPlot.pdf}
 	\end{minipage}}
-\end{comment}
+
+\fbox{\begin{minipage}{35em}
+		\includegraphics[page=1,scale=0.4]{Expt8OP/clusterPlotTwo.pdf}
+\end{minipage}}
+
+\fbox{\begin{minipage}{35em}
+		\includegraphics[page=1,scale=0.4,angle=270]{Expt8OP/DindexValues.pdf}
+\end{minipage}}
+
+\fbox{\begin{minipage}{35em}
+		\includegraphics[page=1,scale=0.4,angle=270]{Expt8OP/hubertStatisticValues.pdf}
+\end{minipage}}
+
+\fbox{\begin{minipage}{35em}
+		\includegraphics[page=1,scale=0.5]{Expt8OP/clusterDendrogram.pdf}
+\end{minipage}}
+
+
+\fbox{\begin{minipage}{35em}
+		\includegraphics[page=1,scale=0.4]{Expt8OP/OptimalNoOfClusters.pdf}
+\end{minipage}}
+
 \section{Result}
-Thus the implementation of Support Vector machine is executed successfully using R program.
-
-
+Thus the implementation of clustering is executed successfully using R program on USArrests Dataset.
 \end{document}

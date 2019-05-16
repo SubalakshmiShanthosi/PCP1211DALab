@@ -1,0 +1,72 @@
+> library("cluster")
+> library("factoextra")
+> library("magrittr")
+> data("USArrests")
+> my_data <- USArrests %>% na.omit() %>% scale()
+> head(my_data, n = 3)
+            Murder   Assault   UrbanPop         Rape
+Alabama 1.24256408 0.7828393 -0.5209066 -0.003416473
+Alaska  0.50786248 1.1068225 -1.2117642  2.484202941
+Arizona 0.07163341 1.4788032  0.9989801  1.042878388
+> fviz_nbclust(my_data, kmeans, method = "gap_stat")
+Clustering k = 1,2,..., K.max (= 10): .. done
+Bootstrapping, b = 1,2,..., B (= 100)  [one "." per sample]:
+.................................................. 50 
+.................................................. 100 
+> set.seed(123)
+> km.res <- kmeans(my_data, 3, nstart = 25)
+> fviz_cluster(km.res, data = my_data, ellipse.type = "convex", 
++ palette = "jco", ggtheme = theme_minimal())
+> library("cluster")
+> pam.res <- pam(my_data, 3)
+> fviz_cluster(pam.res)
+> res.hc <- USArrests %>% scale() %>% dist(method = "euclidean") %>% 
++ hclust(method = "ward.D2")
+> fviz_dend(res.hc, k = 4, cex = 0.5, k_colors = c("#2E9FDF", "#00AFBB", 
++ "#E7B800", "#FC4E07"), color_labels_by_k = TRUE, rect = TRUE)
+> set.seed(123)
+> library("NbClust")
+> res.nbclust <- USArrests %>% scale() %>% NbClust(distance = "euclidean", 
++ min.nc = 2, max.nc = 10, method = "complete", index = "all")
+*** : The Hubert index is a graphical method of determining the number of clusters.
+                In the plot of Hubert index, we seek a significant knee that corresponds to a 
+                significant increase of the value of the measure i.e the significant peak in Hubert
+                index second differences plot. 
+ 
+*** : The D index is a graphical method of determining the number of clusters. 
+                In the plot of D index, we seek a significant knee (the significant peak in Dindex
+                second differences plot) that corresponds to a significant increase of the value of
+                the measure. 
+ 
+******************************************************************* 
+* Among all indices:                                                
+* 9 proposed 2 as the best number of clusters 
+* 4 proposed 3 as the best number of clusters 
+* 6 proposed 4 as the best number of clusters 
+* 2 proposed 5 as the best number of clusters 
+* 1 proposed 8 as the best number of clusters 
+* 1 proposed 10 as the best number of clusters 
+
+                   ***** Conclusion *****                            
+ 
+* According to the majority rule, the best number of clusters is  2 
+ 
+ 
+******************************************************************* 
+> library(factoextra)
+> fviz_nbclust(res.nbclust, ggtheme = theme_minimal())
+Among all indices: 
+===================
+* 2 proposed  0 as the best number of clusters
+* 1 proposed  1 as the best number of clusters
+* 9 proposed  2 as the best number of clusters
+* 4 proposed  3 as the best number of clusters
+* 6 proposed  4 as the best number of clusters
+* 2 proposed  5 as the best number of clusters
+* 1 proposed  8 as the best number of clusters
+* 1 proposed  10 as the best number of clusters
+
+Conclusion
+=========================
+* According to the majority rule, the best number of clusters is  2 .
+
