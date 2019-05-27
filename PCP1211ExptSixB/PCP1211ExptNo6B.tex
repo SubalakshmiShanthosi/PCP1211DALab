@@ -1,0 +1,217 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[lmargin=2.0cm, rmargin=1.0cm,tmargin=3.5cm,bmargin=1.5cm]{geometry}
+\usepackage{color,graphics}
+\usepackage[export]{adjustbox}
+\usepackage{lipsum}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{xfrac}
+%\usepackage{lstlisting}
+\usepackage{listings}
+\usepackage[scaled=0.75]{helvet}
+\usepackage{amsmath}
+\usepackage{algorithm2e}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{algpseudocode}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\makeatletter
+\newcommand{\algrule}[1][.2pt]{\par\vskip.5\baselineskip\hrule height #1\par\vskip.5\baselineskip}
+\makeatother
+\begin{document}
+\setcounter{secnumdepth}{-1} 
+\begin{center}
+\textbf{\LARGE  Implementation of Support Vector Machine Classification using R package - Caret for Heart Disease Recognition Dataset.}
+\end{center}
+
+\raggedright Expt No: 6 (b) \hfill \raggedleft May 8,2019 \\ 
+
+\raggedright Author: Subalakshmi Shanthosi S (186001008) \par 
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
+
+\section{Aim}
+Implementation of Support Vector Machine(SVM) using R package- Classification and Regression Training(CARET) for Heart Disease Recognition Dataset.
+
+\section{Description}
+\begin{enumerate}
+	\item Support Vector Machine:
+	\begin{itemize}
+		\item Support Vector Machine is a Supervised Learning Model.
+		\item SVM can be applied for both classification and regression algorithms but predominantly used for classification problems.	 
+		\item Support Vector Algorithm Working:
+		\begin{itemize}
+		 \item Input : Data points from the dataset (Heart Disease recognition dataset).
+		 \item Output : Hyperplane - The line which best separates the tags.
+		 \item Careful choice of Kernal function which decides the accuracy of the model.	
+		\end{itemize}
+	    \item Advantages of using SVM for classification:
+	    \begin{itemize}
+	    	\item High Dimensionality.
+	    	\item Memory Efficiency.
+	    	\item Versatility.	
+	    \end{itemize}
+       \item Disadvantages of using SVM:
+       \begin{itemize}
+       	\item Kernel Parameters Selection : SVM shows poor performance on higher dimensional data.
+       	\item Non-Probabilistic : Effectiveness is less evident as the algorithm places few data points above and below the decision boundry which might lead to misclassification if the between class varients among points is less.
+       \end{itemize}	
+	\end{itemize}
+    \item Classification hyperplane based on the data point's distribution is presented below:
+     \begin{figure}[h]
+    	\includegraphics[scale=0.70,center]{svmClassification.png}
+    	\caption{SVM Linear Model.}
+    	\label{fig:1}
+    \end{figure}
+    \begin{figure}[h]
+    	\includegraphics[scale=0.30,center]{svmNonLinearData.png}
+    	\caption{SVM Non Linear model by 3-D projection.}
+    	\label{fig:2}
+    \end{figure}
+    
+\end{enumerate}
+
+\pagebreak
+\section{Tools and Packages}
+\begin{enumerate}
+	\item Tools
+	\begin{itemize}
+		\item RStudio.
+		\item R Version 1.1.463
+	\end{itemize}
+	\item Support Vector Machine and Visualisation Packages
+	\begin{itemize}
+		\item 
+		\item ggplot2 (Visualisation)
+		\item GGally (Visualisation)
+	\end{itemize}				
+\end{enumerate}
+
+\section{Dataset Description - Heart Disease Databases}
+\begin{itemize}
+	\item  This database contains 76 attributes, but all published experiments refer to using a subset of 14 of them.
+	\item The "goal" field refers to the presence of heart disease
+	in the patient.  It is integer valued from 0 (no presence) to 4.
+	Experiments with the Cleveland database have concentrated on simply
+	attempting to distinguish presence (values 1,2,3,4) from absence (value
+	0).  	
+\item Number of instances in Heart Disease Dataset:
+	\begin{itemize}
+		\item Cleveland: 303
+		\item   Hungarian: 294
+		\item Switzerland: 123
+		\item Long Beach VA: 200
+	\end{itemize}
+\item Attribute information: 
+\begin{figure}[h]
+	\includegraphics[scale=0.55,center]{heartDiseaseDataset.png}
+	\caption{Heart Disease Detection Database important attributes.}
+	\label{fig:2}
+\end{figure}
+	
+\end{itemize}
+\section{Procedure}
+
+\begin{enumerate}
+	\item Split the data set as:
+	\begin{itemize}
+		\item Training dataset.
+		\item Testing dataset.
+	\end{itemize}
+	\item Exploratory data Visualisation : To decide on the model to fit for a better precision in classification.
+	\item Feature Scaling and Model Fitting.
+	\item Calculate prediction and evaluate the SVM model/kernal accuracy.
+	\item Display the confusion matrix.
+\end{enumerate}	
+
+\section{Support Vector Machine}
+
+\begin{itemize}
+	\item Support Vector Machine is a machine learning algorithm which:
+	\begin{enumerate}
+		\item Solves classification problems.
+		\item Uses flexible representation of decision boundary.
+		\item Implements automatic complexity control to reduce overfitting.
+		\item A single global minimum which can be found in polynomial
+		time.
+	\end{enumerate}
+\newpage
+    \item  Pseudocode :
+    
+    \begin{algorithm}
+    	\caption{The Support Vector Algorithm}
+    	\algrule
+    	\begin{itemize}
+    		\Statex \textbullet~\textbf{Initialisation:}
+    		\begin{itemize}
+    			\item For the specified kernel, and kernel parameters, compute the kernel of distances between the datapoints.
+    			\item The main work here is the computation K=XX\textsuperscript{T}.
+    			\item For the linear kernel, return K, for the polynomial of degree d return $\frac{1}{\sigma K \textsuperscript{d}}$.
+    		    \item For the RBF kernel, compute K = $\exp(-\frac{(x-x\textsuperscript{'})^2}{2\sigma\textsuperscript{2}})$.
+    	\end{itemize}
+    	\Statex \textbullet~\textbf{Training}
+    		\begin{itemize}
+    			\item Assemble the constraint set as matrices to solve:
+    			\begin{equation}
+    				min\textsubscript{x} \frac{1}{2}x\textsuperscript{T}t\textsubscript{i}t\textsubscript{j}K\textsubscript{x}+q\textsuperscript{T}x.
+    			\end{equation}
+    			subject to 
+    			$G\textsubscript{x}<=h$
+    			\linebreak
+    			$A\textsubscript{x}=b$
+    			\item Pass these matrices to the solver.
+    			\item Identify the support vectors as those that are within some specified distance of the closest point and dispose of the rest of the training data.
+    			\item Calculate b\textsuperscript{*} using equation:
+    			\begin{equation}
+    				b\textsuperscript{*}=\frac{1}{N\textsubscript{s}}\sum_{all support vectors}(t\textsubscript{j}-\sum_{i=1}^{n}\lambda\textsubscript{i}t\textsubscript{i}x\textsubscript{i}\textsuperscript{T}x\textsubscript{j}) .
+    			\end{equation}
+    		\end{itemize} 
+    	    \Statex \textbullet~\textbf{ Classification}
+    	    \begin{itemize}
+    	    	\item For the given test data \textbf{z}, Use the support vector to classify the data for the relevant kernal by : 
+    	    	\begin{itemize}
+    	    		\item Compute the inner product of the test data and the support vectors.
+    	    		\item Perform the classification as:
+    	    		\begin{equation}
+    	    			\sum_{i=1}^{n}\lambda\textsubscript{i}t\textsubscript{i}K(x\textsubscript{i},z)+b\textsuperscript{*}.
+    	    		\end{equation}
+    	    		returning -
+    	    		\linebreak
+    	    		The label (Hard Classification)
+    	    		\linebreak
+    	    		The value(Soft Classification)
+    	    	\end{itemize}
+    	    \end{itemize}
+    	\end{itemize}
+\algrule
+    \end{algorithm}
+
+\end{itemize}
+
+\newpage
+\section{Confusion Matrix}
+\begin{itemize}
+\item A confusion matrix is a table that can be generated for a classifier on a Data Set 
+
+\textbf{True Positives(TP)-} These are the cases where the predicted and actual both are yes.
+\linebreak
+\textbf{True Negatives(TN)-} These are the cases where the predicted value is no and actual value is yes.
+\linebreak
+\textbf{False Positive(FP)-} These are the cases where the predicted value is yes and actual value is no.
+\linebreak
+\textbf{False Negative(FN)-} These are the cases where prediction is no and actual value is no.
+\end{itemize}
+
+\section{Coding}
+
+\lstinputlisting{svmHeartDisease.r}
+\section{Output} 
+
+\verbatiminput{svmOutput.txt}
+\section{Result}
+Thus the implementation of Support Vector machine is executed successfully using R program.
+
+
+\end{document}

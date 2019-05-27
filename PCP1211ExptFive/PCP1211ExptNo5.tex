@@ -1,0 +1,206 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[lmargin=2.0cm, rmargin=1.0cm,tmargin=3.5cm,bmargin=1.5cm]{geometry}
+\usepackage{color,graphics}
+\usepackage[export]{adjustbox}
+\usepackage{lipsum}
+\usepackage{multirow}
+\usepackage{graphicx}
+%\usepackage{lstlisting}
+\usepackage{listings}
+\usepackage[scaled=0.75]{helvet}
+
+\begin{document}
+\setcounter{secnumdepth}{-1} 
+
+\begin{center}
+\textbf{\LARGE  Implementation of Linear and Logistic Regression (Packages: glmnet, earth)}
+\end{center}
+
+\raggedright Expt No: 5 \hfill \raggedleft April 3,2019 \\ 
+
+\raggedright Author: Subalakshmi Shanthosi S (186001008) \par 
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
+
+\section{Aim}
+Implementation of Linear and Logistic Regression using R program.
+
+\section{Description}
+\begin{enumerate}
+	\item Linear Regression:
+	\begin{itemize}
+		\item Linear regression is used to predict the value of an outcome variable Y based on one or more input predictor variables X.
+		\item Linear regression aims at establishing a linear relationship (a mathematical formula) between the predictor variable(s) and the response variable, so that, we can use this formula to estimate the value of the response Y, when only the predictors (Xs) values are known.	 	
+	\end{itemize}
+	\item Logistic Regression:
+
+	\begin{itemize}
+		\item Extension of Linear Regression where the dependent variable is categorical and not continuous. It predicts the probability of the outcome variable.
+		\item Logistic regression can be binomial or multinomial.
+		\item Binomial Logistic regression : 
+		  \begin{itemize}
+		  	\item Value= Yes
+		  	\item Value= No
+		  \end{itemize}
+		\item Multinomial Logistic Regression : Outcome having 3 possibilities:
+		\begin{itemize}
+	         \item Value= Best
+	         \item Value= Very Good
+	         \item Value= Best
+		\end{itemize}
+	\end{itemize}
+
+\end{enumerate}
+
+\section{Equation} 
+\begin{enumerate}
+   \item Linear Regression Formula:
+   \begin{equation}
+   Y = \beta_1 + \beta_2X +  \epsilon
+   \end{equation}
+   where the Regression Coefficients are: 
+   
+   $\beta_1$ is the intercept \\
+   $\beta_2$ is the slope \\
+   $\epsilon$ is the error time period for which there is no prediction of value Y
+  
+  \item Logistic Regression Formula:
+  \begin{equation}
+  	P(y = 1) = \frac{1} {(1+ e^({-1*}( \beta_0 + \beta_1x_1 +\beta_2x_2 +\textellipsis + \beta_kx_k)))}
+  \end{equation}
+  where the Logistic Regression Coefficients are:
+  
+  $\beta$ is the coefficient selected to maximize the likelihood of predicting a high probability for observations.
+\end{enumerate}
+
+\section{Tools and Packages}
+\begin{enumerate}
+	\item Tools
+	\begin{itemize}
+		\item RStudio.
+		\item R Version 1.1.463
+	\end{itemize}
+	\item Linear and Logistic Regression Packages
+	\begin{itemize}
+		\item glmnet
+		\item earth
+	\end{itemize}				
+\end{enumerate}
+
+\section{Procedure}
+
+\begin{enumerate}
+	\item Split the data set as:
+	\begin{itemize}
+		\item Training dataset.
+		\item Testing dataset.
+	\end{itemize}
+	\item Develop the model on the training data and use it to predict the distance on test data.
+	\item Review diagnostic measures.
+	\item Calculate prediction accuracy and error rates
+	\item Metric Calculation
+\end{enumerate}	
+
+\section{How to know if the model is best fit for your data?}
+
+\begin{enumerate}
+%	\begin{itemize}
+		\item R-Squared:
+			R-Squared tells us the proportion of variation in the dependent variable that has been used.
+			\begin{equation}
+				R^2=1-\frac{SSE}{SST}
+			\end{equation}
+		\item Adj R-Squared:
+			  Adj R-Squared penalizes total value for the number of terms (read predictors) in your model. Therefore when comparing nested models, it is a good practice to look at adj-R-squared value over R-squared.
+			\begin{equation}
+				R^2_{adj}=1-\frac{((1-R^2)(n-1))}{(n-q)}
+			\end{equation}
+		\item Standard Error and F-Statistic:
+			  Both standard errors and F-statistic are measures of goodness of fit.
+			\begin{equation}
+				Std. Error = \sqrt{MSE} = \sqrt{\frac{SSE}{n-q}}
+			\end{equation}
+			\begin{equation}
+				F-statistic = \frac{MSR}{MSE}
+			\end{equation}
+			where, n is the number of observations, q is the number of coefficients and MSR is the mean square regression, calculated as,
+			\begin{equation}
+				MSR=\frac{\sum_{i}^{n}\left( \hat{y_{i} - \bar{y}}\right)}{q-1} = \frac{SST - SSE}{q - 1}
+			\end{equation}
+		\item AIC and BIC:
+			  The Akaike’s information criterion - AIC  and the Bayesian information criterion - BIC are measures of the goodness of fit of an estimated statistical model and can also be used for model selection. Both criteria depend on the maximized value of the likelihood function L for the estimated model.
+The AIC is defined as:
+			\begin{equation}
+				AIC = (−2) × ln(L) + (2×k)
+			\end{equation}
+		where, k is the number of model parameters and the BIC is defined as:
+		    \begin{equation}
+				BIC = (−2) × ln(L) + k × ln(n)
+			\end{equation}
+
+%	\end{itemize}
+\end{enumerate}
+
+\section{Coding}
+
+\lstinputlisting{linearReg.r}
+%\begin{lstlisting}
+%# Create Training and Test data -
+%set.seed(100)  # setting seed to reproduce results of random sampling
+%trainingRowIndex <- sample(1:nrow(cars), 0.8*nrow(cars))  # row indices for training data
+%trainingData <- cars[trainingRowIndex, ]  # model training data
+%testData  <- cars[-trainingRowIndex, ]   # test data
+%
+%# Build the model on training data -
+%lmMod <- lm(dist ~ speed, data=trainingData)  # build the model
+%distPred <- predict(lmMod, testData)  # predict distance
+%
+%summary (lmMod)  # model summary
+%
+%AIC (lmMod)  # Calculate akaike information criterion
+%
+%actuals_preds <- data.frame(cbind(actuals=testData$dist, predicteds=distPred))  # make actuals_predicteds dataframe.
+%correlation_accuracy <- cor(actuals_preds)  # 82.7%
+%head(actuals_preds)
+%
+%min_maxImplement Linear and Logistic Regression_accuracy <- mean(apply(actuals_preds, 1, min) / apply(actuals_preds, 1, max))  
+%mape <- mean(abs((actuals_preds$predicteds - actuals_preds$actuals))/actuals_preds$actuals)  
+%
+%modelSummary <- summary(lmMod)  # capture model summary as an object
+%modelCoeffs <- modelSummary$coefficients  # model coefficients
+%beta.estimate <- modelCoeffs["speed", "Estimate"]  # get beta estimate for speed
+%std.error <- modelCoeffs["speed", "Std. Error"]  # get std.error for speed
+%t_value <- beta.estimate/std.error  # calc t statistic
+%p_value <- 2*pt(-abs(t_value), df=nrow(cars)-ncol(cars))  # calc p Value
+%f_statistic <- lmMod$fstatistic[1]  # fstatistic
+%f <- summary(lmMod)$fstatistic  # parameters for model p-value calc
+%model_p <- pf(f[1], f[2], f[3], lower=FALSE)
+%\end{lstlisting}
+
+
+\begin{table}
+      \caption{Output: Statistical Features}
+      
+   	  \begin{tabular}{|l|l|l|} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      \hline
+      %<--\caption[These are the  most common metrics to look at while selecting the model are]{\protect\lipsum[1]}
+      \textbf{STATISTIC} & \textbf{VALUE} & \textbf{CRITERION}\\ \hline
+       R-Squared & 15.38 & Higher the better and greater  0.70\\ \hline
+       Adj R-Squared & 0.6438 & Higher the better \\ \hline
+       F-Statistic & 23.113231 & Higher the better \\ \hline
+       Std. Error & 0.4869 & Closer to zero the better \\ \hline
+       t-statistic & 8.8634 & Should be greater 1.96 for p-value to be less than 0.05 \\ \hline
+       AIC & 338.4489 & Lower the better \\ \hline
+       BIC & 343.5155 & Lower the better \\ \hline
+       Mallows cp & 10.1 & Should be close to the number of predictors in model \\ \hline
+       MAPE (Mean absolute percentage error) & 0.6995 & Lower the better \\ \hline
+       MSE (Mean squared error) & 23.113231 & Lower the better \\ \hline
+       Min Max Accuracy & 0.38004 & Higher the better \\ \hline
+        \end{tabular}
+\end{table}
+ \vfill
+\section{Result}
+Thus the implementation of Linear and Logistic Regression is executed successfully using R program.
+
+
+\end{document}
